@@ -1,10 +1,12 @@
 """
     This program sends a message to a queue on the RabbitMQ server.
-
+Shanti Kandel
+September 8, 2023
 """
 
 # add imports at the beginning of the file
 import pika
+message = ['Hello World!','Hello Shanti','Hello Dr Case']
 
 # create a blocking connection to the RabbitMQ server
 conn = pika.BlockingConnection(pika.ConnectionParameters("LOCALHOST"))
